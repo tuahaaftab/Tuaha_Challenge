@@ -44,7 +44,7 @@ class HelloCdkStack(Stack):
         ec2.Instance(self, "Instance",
             
             # Assign a VPC to the instance
-            vpc=vpc,
+            vpc=vpc, 
             
             # Assign an instance type
             instance_type= ec2.InstanceType("t2.micro"),
